@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Management System</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+  <style>
+       body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    header h1, footer p {
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input, select, button {
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+    footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+  </style>
+</head>
+<body>
+
+    <header>
+        <h1>Attendance Management System</h1>
+      </header>
+
+
+  <!-- Generate Reports Form -->
+  <form id="reportsForm">
+    <h2>Generate Reports</h2>
+    <input type="date" required>
+    <select>
+      <option value="individual">Individual</option>
+      <option value="class">Class</option>
+      <option value="overall">Overall</option>
+    </select>
+    <button type="button" onclick="generateReport()">View/Download Report</button>
+  </form>
+  <footer>
+    <p>@Sudesh-Rajbhar_6417</p>
+  </footer>
+
+  <script>
+    function showAlert(message) {
+      alert(message);
+    }
+
+    function generateReport() {
+      // Perform report generation logic (fetch data, generate report, etc.)
+      showAlert("Report generated successfully!");
+      document.getElementById("reportsForm").reset();
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Management System</title>
+  <link rel="icon" href="logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <style>
+    *{
+        font-family: 'Poppins', sans-serif;
+
+    }
+     body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    header h1, footer p {
+      margin: 0;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+
+    /* Add this CSS code to your existing styles */
+    button {
+    background-color: #4CAF50;
+    margin: 20px;
+    color: white;
+    padding: 30px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+    }
+    
+
+    button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1); /* Pop-up effect */
+    }
+    footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Attendance Management System</h1>
+  </header>
+
+  <main>
+    <div>
+      <button onclick="redirectTo('generate_reports.html')">Generate Reports</button>
+      <button onclick="redirectTo('attendance_form.html')">Record Attendance</button>
+      <button onclick="redirectTo('user_registration.html')">User Registration</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>@Sudesh-Rajbhar_6417</p>
+  </footer>
+
+  <script>
+    function redirectTo(page) {
+      window.location.href = page;
+    }
+  </script>
+
+</body>
+</html>
