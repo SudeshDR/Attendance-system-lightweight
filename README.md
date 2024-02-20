@@ -18,7 +18,11 @@ The interface is static, providing a simple and user-friendly experience for acc
 
 **user_registration.html: User Registration**
 
-Users can register on the system by providing their full name, email, phone number, and password.
+_Users can register on the system by providing their full name, email, phone number, and password.
 The registration form captures essential user details for creating a unique account.
 Once registered, users gain access to the attendance recording and report generation features.
-The website employs a static-based UI design for a clean and straightforward user experience. Users can navigate between these pages to efficiently manage attendance records, generate reports, and register new users. The static nature of the interface ensures simplicity and ease of use without unnecessary complexities.
+The website employs a static-based UI design for a clean and straightforward user experience. 
+Users can navigate between these pages to efficiently manage attendance records, generate reports, and register
+new users. The static nature of the interface ensures simplicity and ease of use without unnecessary complexities.
+_
+
